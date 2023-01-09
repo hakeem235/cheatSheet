@@ -11,18 +11,31 @@ ___
 ### To clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH.
   
   ` git clone <repo> `
-### To define the author email to be used for all commits by the current user
+### To define author name to be used for all commits in current repo. Devs commonly use --global flag to set config options for current user.
   
-  `git config --global user.email <email>`
+  `git config user.name <name>`
   
-### To reate shortcut for a Git command. E.g. alias.glog “log --graph --oneline” will set ”git glog” equivalent to ”git log --graph--oneline.
+### To stage all changes in <directory> for the next commit. Replace <directory> with a <file> to change a specific file.
 
-` git config --global alias.<alias-name> <git-command>`
+` git add <directory>`
   
-### To set text editor used by commands for all users on the machine. <editor> arg should be the command that launches the desired editor (e.g., vi).
+### To commit the staged snapshot, but instead of launching a text editor, use <message> as the commit message.
   
-  `git config --system core.editor <editor>`
+  `git commit -m "<message>"`
   
-### To open the global configuration file in a text editor for manual editing.
-  
-  `git config --global --edit`
+### To list which files are staged, unstaged, and untracked.
+
+  `git status`
+
+### To display the entire commit history using the default format. For customization see additional options.
+
+`git log`
+
+### To Show unstaged changes between your index and working directory..
+
+`git diff`
+
+
+----
+
+Resources: [ATLASSIAN](https://www.atlassian.com/git)
