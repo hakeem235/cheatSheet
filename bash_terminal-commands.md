@@ -74,3 +74,7 @@ Press `tab` key once to autocomplete once you have typed a unique portion of a f
 #### Open all files and folder in current directory (PC Only)
 
 `explorer .`
+
+___
+
+Resources: Carleton University Full Stack Flex Bootcamp
